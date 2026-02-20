@@ -23,5 +23,5 @@ jobs:
         run: docker push ghcr.io/${{ github.repository }}:${{ github.sha }}
 
       - name: Run container
-        run: docker run pandas-demo:${{ github.sha }}
+        run: docker run ghcr.io/${{ github.repository }}:${{ github.sha }}
 
